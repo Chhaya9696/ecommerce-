@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link  rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link  rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    <script src="{%static 'js/script.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+</head>
+<body>
+{% block header %}
+
+  <table height="100%" width="100%">
+    <tr style="background-color: brown; height: 80px; padding: 5px;" >
+      <td colspan="2" style="align-items: end;">
+    <div class="div1" >
+        <div class="logo">
+            <div> <img width="75" src="{% static 'image/logo.png' %}"  class="JU"></div>
+            <div> <a href="set.html" class="Explore">Explore <span class="h">Plus</span>
+            <img width="10" src="{% static 'image/plus.png' %}"></a></div>
+        </div>
+    </div>
+      </td>
+
+  <td colspan="4" >
+
+  <form method="POST" action="{% url 'flipkart' %}">
+      {% csrf_token %}
+      <div class="search-bar">
+        <input type="text" name="search_query" placeholder="Search..." value="{{ request.POST.search_query }}">
+          <button class="search-button" type="submit">Search a Product</button>
+      </div>
+    </form>
+    </td>
+    <td>
+        <a href="{% url 'signup' %}" class="ab">
+            <input  class="btn" type="button" value="login" name="login" style="background-color: aliceblue;" >
+    </a>
+    </td>
+      <td>
+        <div>
+           <span class="ab">welcome {{user}}</span>
+        </div>
+      </td>
+        <td colspan="2">
+        <div>
+            <a href="{% url 'view_cart' %}" class="ab"><img src="{% static 'image/cart.png' %}">cart</a>
+            {% for item in CartItem %}
+                <span class="ab"><h2>{{item.price}}</h2></span>
+            {% endfor %}
+        </div>
+        </td>
+        </td>
+      </tr>
+      <tr>
+
+    <div class="div2">
+        <td>
+        <div class="itm1"><a href="{% url 'appliances' %}"><img src="{% static 'image/appliance.webp' %}" ></a></div>
+        </td>
+        <td>
+        <div class="itm1" ><a href="#"><img src="{% static 'image/toys.webp' %}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/fash.webp' %}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/electronic.webp' %}"></a></div>
+        </td>
+        <td>
+                <div class="itm1"><a href="{% url 'grocery' %}"><img src="{% static 'image/grocery.webp' %}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/home.webp'%}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/mobile.webp'%}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/bike.webp'%}"></a></div>
+        </td>
+        <td>
+        <div class="itm1"><a href="#"><img src="{% static 'image/fligth.webp'%}"></a></div>
+        </td>
+    </div>
+  </tr>
+  </table>
+    {% endblock %}
+
+
+{%block footer%}
+<h1>i m footer</h1>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" novalidate>
+    {% csrf_token %}
+     <table>
+        {% for fm in reg_fm  %}
+                <tr>
+                    <td>{{fm.label_tag}}</td>
+                    <td>{{fm}}</td>
+                    <td>{{fm.errors}}</td>
+                </tr>
+        {% endfor %}
+
+    </table>
+    <input type="submit" value="register"/>
+
+   <p>Already has an account? <a href="{%url 'signin' %}">Signin</a></p>
+</form>
+</body>
+</html>

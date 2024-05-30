@@ -1,0 +1,129 @@
+    .div2{
+            display:flex;
+            flex-direction: row;
+            justify-content:stretch;
+            align-content: space-around;
+            gap: 100px;
+
+        }
+        .div1{
+            height: 30px;
+        background-color: rgba(59, 42, 134, 0.904);
+        padding: 15px;
+        width: 100%;
+        position: relative;
+        top:5px;
+        display:flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-around;
+
+          }
+          .logo{
+            display: flex;
+            margin-top:-9px;
+        flex-dWe are going to see how to change the attributes of the different act like attributes. Any detail image that confirms attributes?of that event? Yes,Mac.supportthen hide.These are the attribute of that image. Alternative facts, yes. So first we are going to see how to change the attribute of that particular time. Script that.anchor type. If you are using the anchor time, I'm curriculum. Attribute for the engineer. Then title of that thing.Yes, then target target attribute Calcutta. Where you want to open that link in the same window, in the same tab, capture new tabs. Link open. Karnataka, we are using target.So all these are the attributes. attributes change color inner. Html, text, my last texture. Move to inner. Html, calculator. Content along with the tag home. Church cursor.Content could change Karnataka in a text so. first, I'm going to select that image or this image culture so well, say I want to add with the help of.Javascript. Saturday, agriculture, image, border is equal to two pixels. Solid bread. Let's check the output.Image. KTM, image to add NK. I missed high time with the right. Yeah, ticket.Let's check the chicken shopping on me. Happy Calcutta. Now, with the help of javascript, we want to add the source of that temperature. So we have a seat attribute, attribute method. Pelece image, there are multiple. ways to select that here. Component schmidt.Query selector on get by iphone get them by tag class.irection: column;
+
+          }
+          .JU
+          {
+            display: block;
+          }
+          .h{
+            color: yellow;
+            font-weight: 800;
+            margin-right: 2px;
+          }
+          .Explore{
+            font-size: 15px;
+            font-style: italic;
+            margin-bottom: 5px;
+            color: aliceblue;
+
+          }
+          .sp{
+
+            border: black;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+
+          }
+          .input{
+            border:none;
+            width: 300px;
+
+            margin-bottom: 5px;
+          }
+
+
+    .ab{
+        color: white;
+        font-size:large;
+
+    }
+    .btn{
+        width: 100px;
+        height: 30px;
+        padding: 2px;
+        margin-left: 30px;
+        border-radius: 8px;
+        border-color: aliceblue;
+        font-size: medium;
+        color: blue;
+
+      }
+     .slide{
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 65%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+    .wrapper{
+    width: 100%;
+    display: flex;
+    animation:slide 16s infinite;
+          }
+  @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+  }
+  .imm{
+    width: 1200px;
+    height: 300px;
+
+  }
+  .imm1{
+    width: 12000px;
+    height: 300px;
+
+  }
